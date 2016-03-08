@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#SBATCH --job-name=forced 
+#SBATCH --job-name=searcher 
 #SBATCH --output=log.txt 
 
 EXTRA_FLAGS=$( head -${SLURM_ARRAY_TASK_ID} list | tail -1 )
